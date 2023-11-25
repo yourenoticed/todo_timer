@@ -4,9 +4,14 @@ class To_Do_List():
 
 	def add_task(self, task):
 		self.todo_list.append(task)
+	
+	def remove_task(self, task):
+		self.todo_list.pop(task)
 
 	def get_by_id(self, id):
 		for task in self.todo_list:
 			if task.id == id:
 				return task
 		return None
+
+	
